@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+header, main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+header > nav {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+header > h1 {
+    margin-left: 20px;
+}
+
+#about {
+    padding-top: 20px;    
+}
+
+.about-card {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    background-color: cadetblue;
+}
+
+.profile-pic-container {
+    height: 400px;
+    width: 300px;
+    background-color: darkolivegreen;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#projects {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: green;
+    min-height: 300px;
+}
+
+#contact {
+    margin: 20px;
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
