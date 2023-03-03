@@ -33,22 +33,12 @@ header > h1 {
     max-width: 800px;
     margin: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: cadetblue;
 }
 
-.profile-pic-container {
-    
-    background-color: darkolivegreen;
-}
-
-.about-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
-.about-description > p, .about-description > h2 {
+.about-card > p, .about-card > h2 {
     margin-left: 20px;
     margin-right: 20px;
 }
