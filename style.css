@@ -37,8 +37,7 @@ header > h1 {
 }
 
 .profile-pic-container {
-    height: 400px;
-    width: 300px;
+    
     background-color: darkolivegreen;
 }
 
@@ -47,6 +46,11 @@ header > h1 {
     flex-direction: column;
     align-items: center;
     flex: 1;
+}
+
+.about-description > p, .about-description > h2 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #projects {
@@ -63,6 +67,17 @@ header > h1 {
 .project-card {
     background-color: green;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card > img {
+    flex: 2;
+}
+
+.project-description {
+    flex: 1;
+    background-color: azure;
 }
 
 #contact {
@@ -73,4 +88,9 @@ header > h1 {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+#phone-icon, #email-icon {
+    height: 1rem;
+    width: auto;
 }
