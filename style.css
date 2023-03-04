@@ -1,18 +1,23 @@
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(190deg, #cbe5ff, #3497fa, #1360ad);
 }
 
 header, main {
     max-width: 1200px;
     margin: auto;
-    background-color: lightblue;
+}
+
+main {
+    background-color: #ad6d02;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #1360ad;
 }
 
 header > nav {
@@ -35,12 +40,16 @@ header > h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #3497fa;
 }
 
 .about-card > p, .about-card > h2 {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.about-card > img {
+    max-width: 8rem;
 }
 
 #projects {
@@ -55,7 +64,7 @@ header > h1 {
 }
 
 .project-card {
-    background-color: green;
+    background-color: #cbe5ff;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -67,20 +76,42 @@ header > h1 {
 
 .project-description {
     flex: 1;
-    background-color: azure;
+    background-color: #3497fa;
 }
 
 #contact {
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    display: flex;
 }
 
-.phone, .email {
+.contact-card, .other {
+    flex: 1;
+}
+
+.other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone, .email, .github, .linkedin{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 #phone-icon, #email-icon {
-    height: 1rem;
+    height: 2rem;
     width: auto;
+}
+
+.devicon-github-original, .devicon-linkedin-plain {
+    font-size: 2rem;
 }
