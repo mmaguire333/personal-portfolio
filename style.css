@@ -4,9 +4,17 @@ body {
     background: linear-gradient(190deg, #cbe5ff, #3497fa, #1360ad);
 }
 
-header, main {
+#intro, header, main {
     max-width: 1200px;
     margin: auto;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 main {
@@ -26,7 +34,7 @@ header > nav {
     margin-right: 20px;
 }
 
-header > h1 {
+header > h2 {
     margin-left: 20px;
 }
 
@@ -43,7 +51,7 @@ header > h1 {
     background-color: #3497fa;
 }
 
-.about-card > p, .about-card > h2 {
+.about-card > p, .about-card > h3 {
     margin-left: 20px;
     margin-right: 20px;
 }

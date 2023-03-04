@@ -12,8 +12,13 @@
     <title>Personal Portfolio</title>
 </head>
 <body>
+    <section id="intro">
+        <h1>Hi, I'm Matt.</h1>
+        <p>Welcome to my page.</p>
+        <button type="button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</button>
+    </section>
     <header>
-        <h1>Matt Maguire</h1>
+        <h2>Matt Maguire</h2>
         <nav class="page-nav">
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
@@ -23,7 +28,7 @@
     <main>
         <section id="about">
             <div class="about-card">
-                <h2>About Me</h2>
+                <h3>About Me</h3>
                 <img src="images/account-circle.svg" alt="profile picture">
                 <p>Hi there, I'm Matt. I'm a new front-end developer from Colorado. I've always loved building things, and my learning journey
                     through web development has been a creative outlet that has really excited me. I also enjoy solving puzzles.
@@ -41,13 +46,13 @@
             </div>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
+            <h3>Projects</h3>
             <p>In my web development journey I have mostly been focusing on builing projects. Here are some of the highlights so far.</p>
             <div class="project-grid-container">
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>The Game of Life</h3>
+                        <h4>The Game of Life</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -58,7 +63,7 @@
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>Project 2</h3>
+                        <h4>Project 2</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -69,7 +74,7 @@
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>Weather App</h3>
+                        <h4>Weather App</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -80,7 +85,7 @@
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>Todo App</h3>
+                        <h4>Todo App</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -91,7 +96,7 @@
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>Project 5</h3>
+                        <h4>Project 5</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -102,7 +107,7 @@
                 <div class="project-card">
                     <img src="" alt="project screenshot">
                     <div class="project-description">
-                        <h3>Project 6</h3>
+                        <h4>Project 6</h4>
                         <p>description..</p>
                         <div class="project-links">
                             <a href="">Live Preview</a>
@@ -114,7 +119,7 @@
         </section>
         <section id="contact">
             <div class="contact-card">
-                <h2>Contact Me</h2>
+                <h3>Contact Me</h3>
                 <p>Let's get in touch. Feel free to contact me anytime.</p>
                 <div class="contact-info">
                     <div class="phone">
