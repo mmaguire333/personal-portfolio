@@ -4,6 +4,28 @@ body {
     background: linear-gradient(190deg, #cbe5ff, #3497fa, #1360ad);
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes changeOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 #intro, header, main {
     max-width: 1200px;
     margin: auto;
@@ -17,11 +39,45 @@ body {
     height: 100vh;
 }
 
+#intro > h1 {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+    animation-fill-mode: forwards;
+}
+
+#intro > p {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+    animation-fill-mode: forwards;
+}
+
+#intro > button {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-name: changeOpacity;
+    animation-fill-mode: forwards;
+}
+
 main {
     background-color: #ad6d02;
 }
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +95,8 @@ header > h2 {
 }
 
 #about {
-    padding-top: 20px;    
+    padding-top: 60px;
+    padding-bottom: 60px;    
 }
 
 .about-card {
