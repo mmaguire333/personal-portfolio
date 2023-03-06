@@ -147,23 +147,21 @@ header > h2 {
 #contact {
     margin-left: 20px;
     margin-right: 20px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
+    justify-content: space-around;
 }
 
-.contact-card, .other {
-    flex: 1;
-}
-
-.other {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-info {
+.contact-message, .contact-links {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-message {
+    align-items: center;
 }
 
 .phone, .email, .github, .linkedin{
