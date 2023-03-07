@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -96,7 +100,7 @@ header > h2 {
 
 #about {
     padding-top: 60px;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;
 }
 
 .about-card {
@@ -177,4 +181,119 @@ header > h2 {
 
 .devicon-github-original, .devicon-linkedin-plain {
     font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #intro, header, main {
+        max-width: 1000px;
+    }
+
+    #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-card {
+        max-width: 500px;
+    }
+
+    #projects {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-grid-container {
+        gap: 10px;
+    }
+
+    #contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #intro, header, main {
+        max-width: 500px;
+    }
+
+    header > nav {
+        margin-right: 10px;
+        gap: 5px;
+    }
+
+    header > h2 {
+        margin-left: 10px;
+    }
+
+    #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-card {
+        max-width: 380px;
+    }
+
+    #projects {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+    
+    #contact {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #intro, header, main {
+        max-width: 400px;
+    }
+    
+    header > nav {
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header > h2 {
+        margin-left: 10px;
+    }
+
+    #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-card {
+        max-width: 300px;
+    }
+
+    #projects {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .project-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    #contact {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
